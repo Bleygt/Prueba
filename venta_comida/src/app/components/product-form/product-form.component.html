@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-sm-4 offset-md-4">
+        <div class="card card-body">
+            <form (submit)="submitProduct()">
+                <div class="form-group">
+                    <input type="text" name="name" [(ngModel)]="product.nombre_producto" placeholder
+                    class="form-control" placeholder="Product Name" autofocus>
+                </div>
+                <div class="form-group">
+                    <input type="text" name="valor" [(ngModel)]="product.valor_unitario"
+                    class="form-control" placeholder="Product Valor">
+                </div>
+                <div class="form-group">
+                    <input type="text" name="cantidad" [(ngModel)]="product.cantidad"
+                    class="form-control" placeholder="Product Cantidad">
+                </div>
+                <button class="btn btn-primary btn-block">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
